@@ -1,0 +1,15 @@
+version: '3'
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: sua_senha_root
+      MYSQL_DATABASE: nome_do_banco
+    ports:
+      - "3306:3306"
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
