@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 # Configurações de conexão
 db_config = {
-    'user': 'sql10639164',
-    'password': 'yRbAiWzBBh',
-    'host': 'sql10.freesqldatabase.com',
-    'database': 'sql10639164'
+    'user': 'user',
+    'password': 'password',
+    'host': 'host',
+    'database': 'database'
 }
 
 # Rotas e operações CRUD aqui...
